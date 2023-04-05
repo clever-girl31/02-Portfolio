@@ -9,7 +9,7 @@
   --bannerTextColor: pink;
 }
 
-header {
+header, footer {
   background-image: var(--headerGradient);
   background-size: 100vw 19%;
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@ header {
   display: flex;
 }
 
-header .blackbox {
+header .blackbox, footer .blackbox {
   background-color: black;
   width:100vw;
   height: 81%;
@@ -44,10 +44,29 @@ nav {
   justify-content: space-evenly;
 }
 
-h1 {
-  flex: 1;
-  flex-shrink: 1;
-  font-size: 60px;
+main {
+  background-color: rgb(52, 71, 88);
+  height: 100vh;
+  color: #ffff
 }
 
+footer {
+  background-position: top;
+  flex-direction: column;
+}
 
+footer .blackbox {
+  background-position: bottom;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    flex-direction: column;
+  }
+
+  header, nav {
+    width: 100%;
+    align-items: center;
+  }
+}
