@@ -9,7 +9,7 @@
   --bannerTextColor: pink;
 }
 
-header, footer {
+header {
   background-image: var(--headerGradient);
   background-size: 100vw 19%;
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@ header, footer {
   display: flex;
 }
 
-header .blackbox, footer .blackbox {
+header .blackbox {
   background-color: black;
   width:100vw;
   height: 81%;
@@ -51,13 +51,23 @@ main {
 }
 
 footer {
-  background-position: top;
-  flex-direction: column;
+  height: 125px;
+  background-image: var(--headerGradient);
+  border-top: 19px solid transparent;
 }
 
-footer .blackbox {
-  background-position: bottom;
-  bottom: 0;
+.blackboxfoot {
+  background-color: black;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer .blackboxfoot
+h3 {
+  background-image: var(--headerGradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 768px) {
@@ -67,6 +77,10 @@ footer .blackbox {
 
   header, nav {
     width: 100%;
+    align-items: center;
+  }
+
+  footer .blackboxfoot {
     align-items: center;
   }
 }
