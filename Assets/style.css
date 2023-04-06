@@ -55,7 +55,6 @@ body, main {
 }
 
 section {
-  /* border: 2px solid white; */
   padding: 80px;
   display: flex;
   justify-content: space-evenly;
@@ -124,6 +123,10 @@ section p {
   padding-top: 5px;
   color: rgb(249, 207, 214);
 }
+
+/* Add contact Section */
+/* add hover pseudos */
+/* add screen size pseudos */
 
 footer {
   height: 125px;
