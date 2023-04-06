@@ -12,31 +12,39 @@
     <div class="blackbox">
     <h1>Joanna McCormack Seybold</h1>
     <nav>
-      <h2>Bio</h2>
-      <h2>Portfolio</h2>
-      <h2>Contact</h2>
+      <a href="#Bio"><h2>Bio</h2></a>
+      <a href="#Portfolio"><h2>Portfolio</h2></a> 
+      <a href="#Contact"><h2>Contact</h2></a>
     </nav>
     </div>
   </header>
 
   <main>
-    <section class="Bio">
+    <section id="Bio" class="Bio">
       <h2>Bio</h2>
       <img id=portrait src="./Assets/placeholder.jpg" alt="An image of Disneyworld instead of Joanna's portrait">
       <p>Joanna M. Seybold is a full stack developer based in Vancouver, Washington. She learned everything she knows about coding through furious Googling andwatching Mr. Robot. Her main career goal is to leverage her skills as a developer to solve problems, do good, and maybe become a part of history.</p>
 
     </section>
 
-    <section class="Portfolio">
-      <h2>Portfolio</h2>
-      <card id="featuredProject">
-        <img id="featuredProject" src="./Assets/screencap-deployed.png" alt="screenshot of a deployed webapp made by Joanna">
-        <p class="inCardText"></p>
-      </card>
+    <section id="Portfolio" class="Portfolio">
       
+      <h2>Portfolio</h2>
+        
+      <a id="featuredProject" href="https://clever-girl31.github.io/Challenge1/">
+          <card>
+            <p class="inCardText">Accessibility Optimization</p>
+          </card>
+      </a>
+      
+      <section class="otherProjectSect">
+        <a id="project2" href="./Assets/img-1.jpg"><p class="inCardText">Coming Soon</p></a>
+        <a id="project3" href="./Assets/img-2.jpg"><p class="inCardText">Coming Soon</p></a>
+        <a id="project4" href="./Assets/img-3.jpg"><p class="inCardText">Coming Soon</p></a>
+      </section>
     </section>
 
-    <section class="Contact">
+    <section id="Contact" class="Contact">
       <h2>Contact</h2>
     </section>
   </main>
