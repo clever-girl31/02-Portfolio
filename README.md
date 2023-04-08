@@ -16,4 +16,6 @@ This web application was created as a place to store future works in order to sh
 
 ## Link
 
+[Deployed Application](https://clever-girl31.github.io/joannaPortfolioOfAwesome/)
+
 ![Screenshot of the deployed web app.](./Assets/PortfolioScreenshot.png)
