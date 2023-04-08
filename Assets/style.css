@@ -70,20 +70,26 @@ section p {
 #portrait {
   width: 25vw;
   border: 10px solid rgb(107, 107, 107);
+  position:relative
 }
 
 .Bio, .Portfolio {
-  margin: 0px 200px;
+  margin: 0px 12%;
   border-bottom: 10px solid rgb(107, 107, 107);
 }
 
+#Portfolio {
+  padding: 40px;
+}
+
 #featuredProject {
+  margin: 40px;
   border: 10px solid rgb(107, 107, 107);
   background-image: url(./screencap-deployed.png);
   background-position: center;
-  background-size: cover;
-  height: 600px;
-  width: 500px;
+  background-size: 500px;
+  min-width: 500px;
+  min-height: 600px;
   position: relative;
 }
 
@@ -108,6 +114,8 @@ section p {
 
 
 .otherProjectSect {
+  height: 650px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,6 +175,64 @@ h3 {
   -webkit-text-fill-color: transparent;
 }
 
+#featuredProject:hover, #project2:hover, #project3:hover, #project4:hover {
+  border: 10px solid white;
+  filter: blur(3px);
+}
+
+@media screen and (max-width: 992px) {
+  * {
+    margin: 0px;
+    padding:0px;
+  }
+  
+  .Bio {
+    margin: 0px 1%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #featuredProject {
+    border: 10px solid rgb(107, 107, 107);
+    background-image: url(./screencap-deployed.png);
+    background-position: center;
+    background-size: 350px;
+    min-width: 350px;
+    min-height: 450px;
+    position: relative;
+  }
+
+  #project2, #project3, #project4 {
+    border: 10px solid rgb(107, 107, 107);
+    background-position: 45% 38%;
+    background-size: 500px;
+    height: 125px;
+    width: 180px;
+    position: relative;
+  }
+
+  .otherProjectSect {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    min-height: 470px
+  }
+
+  .Portfolio {
+    justify-content: space-evenly;
+    padding: 60px 0px;
+    margin: 0px
+  }
+
+  .contactMethods {
+    height: 300px;
+    align-content: space-evenly;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   * {
     flex-direction: column;
@@ -185,6 +251,46 @@ h3 {
   #Bio p{
     margin: 10px;
     width: 90vw;
+  }
+
+  .Bio {
+    padding: 0px 0px;
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  #portrait {
+    min-width: 30vw;
+  }
+
+  .Portfolio {
+    display: flex;
+    padding: 0%;
+    height: 800px
+  }
+
+  .otherProjectSect {
+    display: flex;
+    flex-direction: row;
+    width: 98vw;
+    min-height: 100px;
+    justify-content: space-around;
+  }
+
+  #featuredProject {
+    min-width: 680px;
+    min-height: 300px;
+    background-size: 680px;
+    background-position: 10% 40%;
+
+    
+  }
+
+  .contactMethods {
+    height: 200px;
+    width: 600px;
+    justify-items: center;
   }
   
   footer .blackboxfoot {
