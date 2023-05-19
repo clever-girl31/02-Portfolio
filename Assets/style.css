@@ -85,7 +85,7 @@ section p {
 #featuredProject {
   margin: 40px;
   border: 10px solid rgb(107, 107, 107);
-  background-image: url(./screencap-moviesearcher.png);
+  background-image: url(./homepageScreencap.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -104,10 +104,10 @@ section p {
 }
 
 #project2 {
-  background-image: url(./screencap-deployed.png);
+  background-image: url(./screencap-moviesearcher.png);
 }
 #project3 {
-  background-image: url(./img-2.jpg);
+  background-image: url(./screencap-deployed.png);
 }
 #project4 {
   background-image: url(./img-3.jpg);
